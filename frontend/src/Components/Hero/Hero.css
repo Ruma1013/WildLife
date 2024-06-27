@@ -20,7 +20,27 @@
     color: white; /* Adjust as necessary */
     padding: 0px; /* Optional: Add padding if needed */
   }
-  
+
+.pic1 {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  cursor: pointer;
+}
+
+.pic2 {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  cursor: pointer;
+}
+
+.social_media_icon{
+  position: absolute;
+  left: 85.5px;
+  cursor: pointer;
+}
+
   .hero-section h1 {
     font-family: 'Roboto Condensed', sans-serif;;
     font-size: 10rem;
