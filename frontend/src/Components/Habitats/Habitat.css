@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+.habitat{
+    background-color: black;
+}
+
+ .carousel {
+    position: relative;
+    max-width: 1589.05px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+  }
+  
+  .carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .carousel-image {
+    width: 32%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+  }
+  
+  .carousel-content {
+    width: 55%;
+    padding: 200px;
+    margin-left: -100px;
+    margin-right: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-content h2 {
+    margin-top: 0;
+    font-size: 4rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: linear-gradient(45deg, #ffffff 20%, #000000 85%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .carousel-content p {
+    font-size: 1rem;
+    color: #000000 65%;
+    line-height: 1.8;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+        
+}
+  
+  .carousel-navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-nav-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+    padding: 0 20px;
+    
+  }
+  
+  .carousel-nav-btn:hover {
+    color: #000;
+  }
+  
+  .prev-btn {
+    left: 0;
+  }
+  
+  .next-btn {
+    right: 0;
+  }
+  
