@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+.discover {
+  background-color: black;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.discoverheader {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: black;
+  margin-bottom: 75px;
+}
+
+.discoverheader h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 4rem;
+  text-align: center;
+  background: linear-gradient(45deg, #ffffff 20%, #000000 85%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.discover-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.discover-item {
+  position: relative;
+  width: 400px;
+  cursor: pointer;
+  overflow: hidden;
+  
+}
+
+.discover-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+ 
+  transition: transform 0.3s ease;
+}
+
+.discover-item:hover img {
+  transform: scale(1.05);
+}
+
+.discover-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: none;
+  justify-content: center;
+  align-items: left;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 0px;
+  text-align: left;
+  overflow-y: auto;
+}
+
+.discover-item.show .discover-details {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.discover-details h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.discover-details p {
+  margin: 5px 0;
+}
