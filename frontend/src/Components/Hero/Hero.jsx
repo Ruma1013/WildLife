@@ -3,7 +3,8 @@ import React from 'react';
 import './Hero.css';
 import menu_icon from '../../assets/Menu.svg';
 import logo_icon from '../../assets/logo_icon.svg';
-import arrow_icon from '../../assets/arrow.svg'
+import logo_icon_small from '../../assets/logo_min.svg';
+
 
 const Hero = () => {
 return (
@@ -16,15 +17,15 @@ return (
       </div>
 
       <div className="pic2">
-        <img src={logo_icon} alt="logo" />
+      <img className="logo-large" src={logo_icon} alt="logo" />
+      <img className="logo-small" src={logo_icon_small} alt="logo" />
       </div>
 
       <h2> EXPLORE THE REAL</h2>
       <h1>WILD LIFE</h1>
       <p>Welcome to WildLife Wonders, your gateway to the fascinating world of wildlife.</p>
       <div className="social_media_icon">
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> 
-        <img src={arrow_icon} alt='menu'></img><br/>
+      
       </div>
 </div>
 

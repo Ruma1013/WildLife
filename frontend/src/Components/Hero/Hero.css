@@ -35,15 +35,18 @@
   cursor: pointer;
 }
 
-.social_media_icon{
-  position: absolute;
-  left: 85.5px;
-  cursor: pointer;
+.logo-large {
+  display: block;
 }
+.logo-small {
+  display: none;
+}
+
+
 
   .hero-section h1 {
     font-family: 'Roboto Condensed', sans-serif;;
-    font-size: 10rem;
+    font-size: 8rem;
     margin-bottom: 0rem;
     margin-left: 100px;
     background: linear-gradient(45deg, #ffffff 20%, #ffffff 85%);
@@ -63,23 +66,23 @@
     margin-left: 100px;
     margin-bottom: 0px;
     padding: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'Roboto Condensed', sans-serif;
     background: linear-gradient(45deg, #ffffff 73%, #ffffff 65%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    letter-spacing: 28px;
+    letter-spacing: 24px;
   }
 
   .hero-section p {
     margin-left: 100px;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-right: 1050px;
+    margin-right: 800px;
     padding: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'Roboto Condensed', sans-serif;
     background: linear-gradient(45deg, #ffffff 73%, #ffffff 65%);
     -webkit-background-clip: text;
@@ -98,6 +101,9 @@
     /* Add a subtle drop shadow */
     border-radius: 0px; /* Optional: Add rounded corners */
     margin-bottom: 75px;
+    margin-left: 67.5px;
+    margin-right: 68px;
+
   }
 
   .about-container h2 {
@@ -129,4 +135,169 @@
     text-align: justify;
 
   }
+
+  /* Media query for responsiveness */
+@media (max-width: 768px) {
+
+  .hero-section {
+    height: 77.5vh; /* Full viewport height */
+    background-image: url('../../assets/bg_min.svg');
+    background-size:contain; /* This ensures the background image covers the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    background-color: black;
+    color: white; /* Adjust as necessary */
+    padding: 0px; /* Optional: Add padding if needed */
+  }
+
+  .hero-section h1 {
+    font-size: 4.0rem;
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+
+  .hero-section h2 {
+    font-size: 1.0rem;
+    letter-spacing: 8px;
+    margin-top: 0px;
+    margin-right: 300px;
+  }
+
+  .hero-section p {
+    font-size: 0.8rem;
+    margin-right: 320px;
+  }
+
+  .pic1, .pic2 {
+    position: absolute;
+    left: 300px;
+  }
+
+  .pic1 {
+    position: absolute;
+    left: 100px;
+    top: 75px;
+  }
+
+  .pic2 {
+    right: 20px;
+  }
+
+  .logo-large {
+    display: none;
+  }
+
+  .logo-small {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    display: block;
+  }
+
+  .about-container{
+    max-width: 750px;
+    margin-top: 0px;
+
+  }
+
+  .about-container h2{
+    font-size: 3.0rem;
+  }
+
+  .about-container p{
+    font-size: 1.0rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero-section {
+    height: 46.5vh; /* Full viewport height */
+    background-image: url('../../assets/bg_min.svg');
+    background-size:contain; /* This ensures the background image covers the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    background-color: black;
+    color: white; /* Adjust as necessary */
+    padding: 0px; /* Optional: Add padding if needed */
+  }
+
+  .hero-section h1 {
+    font-size: 2.0rem;
+    margin-top: 0px;
+    margin-right: 100px;
+    margin-left: 75px;
+  }
+
+  .hero-section h2 {
+    font-size: 0.5rem;
+    letter-spacing: 5px;
+    margin-top: 0px;
+    margin-right: 100px;
+    margin-left: 75px;
+  }
+
+  .hero-section p {
+    font-size: 0.5rem;
+    margin-right: 250px;
+    margin-left: 75px;
+  }
+
+  .pic1, .pic2 {
+    position: absolute;
+    left: 300px;
+    
+  }
+
+  .pic1 {
+    position: absolute;
+    left: 75px;
+    top: 75px;
+  }
+
+  .pic2 {
+    right: 20px;
+  }
+
+  .logo-large {
+    display: none;
+  }
+
+  .logo-small {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    display: block;
+  }
+
+  .about-container{
+    max-width: 750px;
+    margin-top: 0px;
+
+  }
+
+  .about-container h2{
+    font-size: 1.5rem;
+
+  }
+
+  .about-container p{
+    font-size: 0.75rem;
+  }
+}
+
+
+
   
