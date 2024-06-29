@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Donate.css';
 import img1 from '../../assets/frog_bg.svg';
+import img2 from '../../assets/elephant_bg.jpg';
 
 const Donate = () => {
   const [name, setName] = useState('');
@@ -55,6 +56,25 @@ const Donate = () => {
         <button type="submit">Submit Now</button>
       </form>
     </div>
+
+    <div className="donateflex2">
+    <div className="leftsection-2">
+            <h2>VOLUNTEER</h2>
+            <p>Join conservation projects and work on the front lines to save wildlife. Volunteering offers a hands-on way to make a real impact. Opportunities include fieldwork, such as monitoring wildlife populations, participating in habitat restoration, and assisting in rescue and rehabilitation efforts. Office-based roles, such as fundraising, event planning, and administrative support, are also available. By volunteering, you gain a deeper understanding of conservation challenges and contribute directly to meaningful solutions.</p>
+            <h2>SPREAD AWARENESS</h2>
+            <p>Educate others about the importance of wildlife conservation. Raising awareness is a powerful tool in the fight to protect wildlife. Share information with your friends, family, and community through social media, local events, and educational workshops. Advocate for conservation issues and encourage others to support wildlife protection initiatives. By spreading the word, you can help build a larger, more informed community committed to making a difference.</p>
+
+    </div>
+
+    <div className="rightsection-2">
+            <div className="img1">
+                <img className='img2'src={img2} alt='frog'/>
+            </div>    
+    </div>
+
+    </div>
+
+
       
     </div>
   )

@@ -5,6 +5,7 @@
     background-color: black;
     display: flex;
     margin-left: 20px;
+    margin-right: 150px;
 }
 
 .leftsection{
@@ -13,6 +14,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 10px;
+    margin-top: 0px;
     padding-left: 150px;
     line-height: 1.1;
     background-color: black;
@@ -20,11 +22,49 @@
 }
 
 .rightsection{
+  height: 80vh;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  margin-top: 10px;
+  margin-right: 0px;
+}
+
+
+.donateflex2{
+  background-color: black;
+  display: flex;
+  margin-left: 150px;
+  margin-right: 0px;
+  margin-bottom: 100px;
+}
+
+.leftsection-2{
     height: 80vh;
     flex: 1;
     color: white;
     margin-top: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+}
+
+.rightsection-2{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  gap: 50px;
+  padding-right: 0px;
+  line-height: 1.1;
+  background-color: black;
+
+}
+
+.img2{
+  position: relative;
+  top: 0;
+  align-items: right;
 }
 
 .rightsection h1{
@@ -53,7 +93,28 @@
     
 }
 
+.leftsection-2 h2{
+  font-size: 3.0rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: linear-gradient(45deg, #ffffff 20%, #000000 85%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+}
+
 .rightsection p{
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.2;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+
+}
+
+.leftsection-2 p{
     font-size: 1.2rem;
     color: white;
     line-height: 1.2;
@@ -72,13 +133,22 @@
     padding: 50px 20px;
     color: #fff;
     text-align: center;
+      max-width: 1389.05px; /* Adjust this value based on your design */
+      margin: 0 auto; /* Center the container horizontally */
+      padding: 20px; /* Add padding inside the container */
+      background-color:black; /* Set background color to white */
+
+      margin-bottom: 15px;
+      margin-left: 67.5px;
+      margin-right: 68px;
+    
   }
   
   .donate-now h2 {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 20px;
-    background: linear-gradient(45deg, #ffffff 20%, #000000 85%);
+    background: linear-gradient(20deg, #ffffff 20%, #000000 85%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -92,7 +162,7 @@
   }
   
   .donate-now input {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 10px;
     font-size: 1rem;
     border: 2px solid #ccc;
@@ -101,7 +171,7 @@
   }
   
   .donate-now button {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 10px 20px;
     font-size: 1rem;
     border: none;
@@ -115,4 +185,125 @@
     background-color: #ddd;
     border-color: #ffffff;
   }
-  
+
+
+  @media (max-width: 768px) {
+    
+    .rightsection h1 {
+      font-size: 3.0rem;
+    }
+
+    .rightsection h2 {
+      font-size: 2.0rem;
+    }
+
+    .rightsection p {
+      font-size: 1.0rem;
+    }
+
+    .donate-now h2{
+      font-size: 2.0rem; 
+    }
+
+    .donate-now p{
+      font-size: 1.0rem;
+    }
+    .leftsection{
+      width: 50%;
+      padding: 0px;
+    }
+
+    .rightsection{
+      width: 20%;
+      padding: 0;
+    }
+
+    .leftsection-2 h2 {
+      font-size: 2.0rem;
+    }
+
+    .leftsection-2 p {
+      font-size: 1.0rem;
+    }
+
+    .rightsection-2{
+      display: none;
+      width: 100%;
+      padding: 0px;
+      top: 0;
+    }
+
+    .leftsection-2{
+      width: 100%;
+      padding: 0;
+    }
+
+    .donateflex2{
+      width: 60%;
+      padding: 0;
+    }
+    .img2{
+      display: none;
+      position: relative;
+      top: 0;
+      align-items: left;
+    }
+    
+.donate-now {
+  margin-bottom: 0px;
+}
+  }
+
+
+  @media (max-width: 480px) {
+    
+    .rightsection h1 {
+      font-size: 2.0rem;
+    }
+
+    .rightsection h2 {
+      font-size: 1.5rem;
+    }
+
+    .rightsection p {
+      font-size: 0.75rem;
+    }
+
+    .leftsection{
+      width: 50%;
+      padding: 0px;
+    }
+
+    .rightsection{
+      width: 20%;
+      padding: 0;
+    }
+
+    .leftsection-2 h2 {
+      font-size: 1.5rem;
+    }
+
+    .leftsection-2 p {
+      font-size: 0.75rem;
+    }
+
+    .rightsection-2{
+      display: none;
+      width: 10%;
+      padding: 0px;
+      top: 0;
+    }
+
+    .leftsection-2{
+      width: 100%;
+      padding: 0;
+    }
+
+
+    .img2{
+      display: none;
+      position: relative;
+      top: 0;
+      align-items: center;
+    }
+  }

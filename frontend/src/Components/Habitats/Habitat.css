@@ -11,9 +11,21 @@
     max-width: 1589.05px;
     margin: 0 auto;
     overflow: hidden;
-    background-color: #f0f0f0;
+    background-color: black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 100px;
+  }
+
+  .carousel-container{
+    max-width: 1389.05px; /* Adjust this value based on your design */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding inside the container */
+    background-color: white; /* Set background color to white */
+    /* Add a subtle drop shadow */
+    border-radius: 0px; /* Optional: Add rounded corners */
+    margin-bottom: 75px;
+    margin-left: 67.5px;
+    margin-right: 68px;
   }
   
   .carousel-item {
@@ -36,7 +48,7 @@
   
   .carousel-content {
     width: 55%;
-    padding: 200px;
+    padding: 120px;
     margin-left: -100px;
     margin-right: 50px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -56,7 +68,7 @@
   }
   
   .carousel-content p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #000000 65%;
     line-height: 1.2;
     font-family: 'Roboto', sans-serif;
@@ -94,4 +106,123 @@
   .next-btn {
     right: 0;
   }
+
+  .previous-large, .next-large{
+    display: block;
+  }
+  .previous-small, .next-small {
+    display: none;
+  }
+
+  .next-large{
+    position: absolute;
+    right: 200px;
+    top: 0px;
+  }
+
+  .previous-large{
+    position: absolute;
+    top: 0px;
+  }
+
+
+  @media (max-width: 768px) {
+
+    .carousel-item {
+      padding: 10px;
+      
+    }
+    .carousel-image {
+      width: 52%;
+      height: auto;
+      
+    }
+
+    .carousel-content {
+      width: 52%;
+      padding: 50px;
+    }
+
+    .carousel-content h2 {
+      margin-top: 0;
+      font-size: 3.0rem;
+    }
+
+    .carousel-content p {
+      margin-top: 0;
+      font-size: 1rem;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    .previous-large, .next-large{
+      display:none;
+    }
+    .previous-small, .next-small {
+      display: block;
+    }
+    .next-small{
+      position: absolute;
+      right: 130px;
+      top: 0px;
+    }
   
+    .previous-small{
+      position: absolute;
+      top: 0px;
+      left:35px;
+    }
+
+    .carousel-container{
+      margin-bottom: 20px;
+    }
+
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-content h2 {
+      font-size: 2.5rem;
+    }
+
+    .carousel-image {
+      width: 52%;
+      height: auto;
+      
+    }
+
+    .carousel-content {
+      width: 52%;
+      padding: 100px;
+    }
+
+    .carousel-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    .carousel-content p {
+      margin-top: 0;
+      font-size: 0.75rem;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    .previous-large, .next-large{
+      display:none;
+    }
+    .previous-small, .next-small {
+      display: block;
+    }
+
+    .next-small{
+      position: absolute;
+      right: 130px;
+      top: 0px;
+    }
+  
+    .previous-small{
+      position: absolute;
+      top: 0px;
+      left:35px;
+    }
+  }
