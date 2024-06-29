@@ -45,12 +45,15 @@ const Habitat = () => {
 
   return (
     <div className="carousel">
+      <div className="carousel-container">
       <div className="carousel-item">
         <img src={image} alt={title} className="carousel-image" />
         <div className="carousel-content">
           <h2>{title}</h2>
           <p>{description}</p>
+
         </div>
+        
       </div>
       <div className="carousel-navigation">
         <button onClick={goToPrevious} className="carousel-nav-btn prev-btn"><img className='previous-large'src={previous} alt='next'/></button>
@@ -60,6 +63,10 @@ const Habitat = () => {
         <button onClick={goToNext} className="carousel-nav-btn next-btn"><img className='next-small'src={next_small} alt='next'/></button>
 
       </div>
+      
+
+      </div>
+
     </div>
   );
 };
