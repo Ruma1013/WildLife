@@ -88,3 +88,16 @@
 .discover-details p {
   margin: 5px 0;
 }
+
+@media (max-width: 768px) {
+  .discoverheader  h2 {
+    font-size: 3.0rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .discoverheader  h2 {
+    margin-top: 0px;
+    font-size: 1.5rem;
+  }
+}

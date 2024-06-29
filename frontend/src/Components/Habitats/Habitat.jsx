@@ -5,6 +5,9 @@ import savannahImg from '../../assets/savannah.png';
 import oceanImg from '../../assets/ocean.png';
 import next from '../../assets/next.png';
 import previous from '../../assets/Previous.png';
+import next_small from '../../assets/next_min.svg';
+import previous_small from '../../assets/previous_min.svg';
+
 
 const habitats = [
   {
@@ -50,8 +53,12 @@ const Habitat = () => {
         </div>
       </div>
       <div className="carousel-navigation">
-        <button onClick={goToPrevious} className="carousel-nav-btn prev-btn"><img src={previous} alt='next'/></button>
-        <button onClick={goToNext} className="carousel-nav-btn next-btn"><img src={next} alt='next'/></button>
+        <button onClick={goToPrevious} className="carousel-nav-btn prev-btn"><img className='previous-large'src={previous} alt='next'/></button>
+        <button onClick={goToPrevious} className="carousel-nav-btn prev-btn"><img className='previous-small' src={previous_small} alt='next'/></button>
+
+        <button onClick={goToNext} className="carousel-nav-btn next-btn"><img className='next-large'src={next} alt='next'/></button>
+        <button onClick={goToNext} className="carousel-nav-btn next-btn"><img className='next-small'src={next_small} alt='next'/></button>
+
       </div>
     </div>
   );
