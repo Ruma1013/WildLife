@@ -133,14 +133,13 @@
     padding: 50px 20px;
     color: #fff;
     text-align: center;
-      max-width: 1389.05px; /* Adjust this value based on your design */
-      margin: 0 auto; /* Center the container horizontally */
-      padding: 20px; /* Add padding inside the container */
-      background-color:black; /* Set background color to white */
-
-      margin-bottom: 15px;
-      margin-left: 67.5px;
-      margin-right: 68px;
+    max-width: 1389.05px; /* Adjust this value based on your design */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding inside the container */
+    background-color:black; /* Set background color to white */
+    margin-bottom: 15px;
+    margin-left: 67.5px;
+    margin-right: 68px;
     
   }
   
@@ -172,6 +171,7 @@
   
   .donate-now button {
     font-family: 'Roboto', sans-serif;
+    width: 200px;
     padding: 10px 20px;
     font-size: 1rem;
     border: none;
@@ -185,6 +185,7 @@
     background-color: #ddd;
     border-color: #ffffff;
   }
+
 
 
   @media (max-width: 768px) {
