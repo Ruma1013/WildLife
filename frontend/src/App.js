@@ -4,6 +4,7 @@ import Discover from './Components/Discover/Discover';
 import Habitat from './Components/Habitats/Habitat';
 import Donate from './Components/Donate/Donate';
 import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Habitat/>
       <Donate/>
       <Contact/>
+      <Footer/>
     </div>
   );
 }
